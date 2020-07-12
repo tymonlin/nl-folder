@@ -3,7 +3,8 @@
   "description": "Folder",
   "main": "",
   "keywords": [
-    "Folder", "Tree"
+    "Folder",
+    "Tree"
   ],
   "authors": [
     "Tymonlin<Tymonlin@163.com>"
@@ -20,10 +21,9 @@
   ],
   "dependencies": {
     "angular": "^1.6.8",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1"
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
-    "bootstrap": "^4.5.0"
+    "jquery": "^3.5.1"
   }
 }

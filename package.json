@@ -4,7 +4,13 @@
   "description": "Virtual folder",
   "main": "gulpfile.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-ngmin": "^0.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
