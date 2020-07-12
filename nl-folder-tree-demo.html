@@ -1,0 +1,63 @@
+<!--[if IE 9 ]>
+<html class="ie9"><![endif]-->
+<![if IE 9 ]>
+<html><![endif]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newland Folder Tree Demo</title>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="nl-folder.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="nl-folder.min.js?v=1"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="TreeDemoCtrl" class="nltree">
+    <nl-folder data="treeData" load-files="loadFiles(row)" class="nlfolder" selected-row="row" max-depth="32"></nl-folder>
+    <h4>选中的行</h4>
+    {{row}}<br>
+    {{treeData}}
+</div>
+<script>
+    var app = angular.module('myApp', ["module.newland.folder"]);
+    app.controller('TreeDemoCtrl', function($scope) {
+        $scope.treeData = [
+            {
+                "name": "第1行",
+                "fileType": "folder"
+            },
+            {
+                "name": "第2行",
+                "fileType": "folder"
+            }
+        ];
+        $scope.loadFiles = function (row) {
+            return [
+                {
+                    "name": row.name + "-1",
+                    "fileType": "file"
+                },
+                {
+                    "name": row.name + "-2",
+                    "fileType": "file"
+                },
+                {
+                    "name": row.name + "-3",
+                    "fileType": "folder"
+                }
+            ]
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
