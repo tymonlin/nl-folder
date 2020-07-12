@@ -1,0 +1,26 @@
+{
+  "name": "nl-folder",
+  "version": "1.0.0",
+  "description": "Virtual folder",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tymonlin/nl-folder.git"
+  },
+  "keywords": [
+    "folder",
+    "newland",
+    "angularjs"
+  ],
+  "author": "TymonLin <Tymonlin@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tymonlin/nl-folder/issues"
+  },
+  "homepage": "https://github.com/tymonlin/nl-folder#readme"
+}
